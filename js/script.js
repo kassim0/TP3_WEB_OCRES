@@ -34,78 +34,79 @@ function ville(){
   console.log(document.getElementById("city-input").value);
 }
 
-function getThreeDayForecast(){
 
- const apiWeather1 = new API_WEATHER();
- const apiWeather2 = new API_WEATHER();
- const apiWeather3 = new API_WEATHER();
+// function getThreeDayForecast(){
+
+//  const apiWeather1 = new API_WEATHER();
+//  const apiWeather2 = new API_WEATHER();
+//  const apiWeather3 = new API_WEATHER();
 
 
 
- apiWeather1
-   .fetchTodayForecast()
-   .then(function(response) {
-     const data = response.data;
+//  apiWeather1
+//    .fetchTodayForecast()
+//    .then(function(response) {
+//      const data = response.data;
 
-     const main = data.weather[0].main;
-     const description = data.weather[0].description;
-     const temp = data.main.temp;
-     const icon = apiWeather1.getHTMLElementFromIcon(data.weather[0].icon);
+//      const main = data.weather[0].main;
+//      const description = data.weather[0].description;
+//      const temp = data.main.temp;
+//      const icon = apiWeather1.getHTMLElementFromIcon(data.weather[0].icon);
 
-     document.getElementById('1-forecast-main').innerHTML = main;
-     document.getElementById('1-forecast-more-info').innerHTML = description;
-     document.getElementById('1-icon-weather-container').innerHTML = icon;
-     document.getElementById('1-forecast-temp').innerHTML = `${temp}°C`;
+//      document.getElementById('1-forecast-main').innerHTML = main;
+//      document.getElementById('1-forecast-more-info').innerHTML = description;
+//      document.getElementById('1-icon-weather-container').innerHTML = icon;
+//      document.getElementById('1-forecast-temp').innerHTML = `${temp}°C`;
      
-   })
-   .catch(function(error) {
-     console.error(error);
-   });
+//    })
+//    .catch(function(error) {
+//      console.error(error);
+//    });
 
 
 
-   apiWeather2
-   .fetchTodayForecast()
-   .then(function(response) {
-     const data = response.data;
+//    apiWeather2
+//    .fetchTodayForecast()
+//    .then(function(response) {
+//      const data = response.data;
 
-     const main = data.weather[0].main;
-     const description = data.weather[0].description;
-     const temp = data.main.temp;
-     const icon = apiWeather2.getHTMLElementFromIcon(data.weather[0].icon);
+//      const main = data.weather[0].main;
+//      const description = data.weather[0].description;
+//      const temp = data.main.temp;
+//      const icon = apiWeather2.getHTMLElementFromIcon(data.weather[0].icon);
 
-     document.getElementById('2-forecast-main').innerHTML = main;
-     document.getElementById('2-forecast-more-info').innerHTML = description;
-     document.getElementById('2-icon-weather-container').innerHTML = icon;
-     document.getElementById('2-forecast-temp').innerHTML = `${temp}°C`;
+//      document.getElementById('2-forecast-main').innerHTML = main;
+//      document.getElementById('2-forecast-more-info').innerHTML = description;
+//      document.getElementById('2-icon-weather-container').innerHTML = icon;
+//      document.getElementById('2-forecast-temp').innerHTML = `${temp}°C`;
      
-   })
-   .catch(function(error) {
-     console.error(error);
-   });
+//    })
+//    .catch(function(error) {
+//      console.error(error);
+//    });
 
 
 
-   apiWeather3
-   .fetchTodayForecast()
-   .then(function(response) {
-     const data = response.data;
+//    apiWeather3
+//    .fetchTodayForecast()
+//    .then(function(response) {
+//      const data = response.data;
 
-     const main = data.weather[0].main;
-     const description = data.weather[0].description;
-     const temp = data.main.temp;
-     const icon = apiWeather3.getHTMLElementFromIcon(data.weather[0].icon);
+//      const main = data.weather[0].main;
+//      const description = data.weather[0].description;
+//      const temp = data.main.temp;
+//      const icon = apiWeather3.getHTMLElementFromIcon(data.weather[0].icon);
 
-     document.getElementById('3-forecast-main').innerHTML = main;
-     document.getElementById('3-forecast-more-info').innerHTML = description;
-     document.getElementById('3-icon-weather-container').innerHTML = icon;
-     document.getElementById('3-forecast-temp').innerHTML = `${temp}°C`;
+//      document.getElementById('3-forecast-main').innerHTML = main;
+//      document.getElementById('3-forecast-more-info').innerHTML = description;
+//      document.getElementById('3-icon-weather-container').innerHTML = icon;
+//      document.getElementById('3-forecast-temp').innerHTML = `${temp}°C`;
      
-   })
-   .catch(function(error) {
-     console.error(error);
-   });
+//    })
+//    .catch(function(error) {
+//      console.error(error);
+//    });
 
    
 
-} 
+// } 
